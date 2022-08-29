@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7038fafb21594c9525aed444864919c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:16px"><b>Forest fire related 2000 tweets all around the world</b></h3>
+             
+    
+            <div class="folium-map" id="map_7038fafb21594c9525aed444864919c8" ></div>
+        
+</body>
+<script>    
+    
+            var map_7038fafb21594c9525aed444864919c8 = L.map(
+                "map_7038fafb21594c9525aed444864919c8",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be3d2ed5c9edd58656adadd65303b1ff = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var marker_5f96eeed60ca4b8d6d54e98cffcb5dc4 = L.marker(
+                [50.0491699, 1.4175744],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_eb79fc0159d5c90f9f260ff881970b8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f96eeed60ca4b8d6d54e98cffcb5dc4.setIcon(icon_eb79fc0159d5c90f9f260ff881970b8b);
+        
+    
+            marker_5f96eeed60ca4b8d6d54e98cffcb5dc4.bindTooltip(
+                `<div>
+                     Eu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63bc687a15b5c219133a8b93a550e89d = L.marker(
+                [29.5647398, 106.5478767],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_7ccde17e2e15f36f6b6610027b036633 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63bc687a15b5c219133a8b93a550e89d.setIcon(icon_7ccde17e2e15f36f6b6610027b036633);
+        
+    
+            marker_63bc687a15b5c219133a8b93a550e89d.bindTooltip(
+                `<div>
+                     Chongqing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2499c382cf520014af2df048ffd44dea = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_a1de7614b6b6e5150d6db5f390b773fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2499c382cf520014af2df048ffd44dea.setIcon(icon_a1de7614b6b6e5150d6db5f390b773fb);
+        
+    
+            marker_2499c382cf520014af2df048ffd44dea.bindTooltip(
+                `<div>
+                     China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16e09f36e1384b007f3eba7e5c604800 = L.marker(
+                [29.5647398, 106.5478767],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_6f572dbfc1bf8a50cc76f2039fb7c03a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16e09f36e1384b007f3eba7e5c604800.setIcon(icon_6f572dbfc1bf8a50cc76f2039fb7c03a);
+        
+    
+            marker_16e09f36e1384b007f3eba7e5c604800.bindTooltip(
+                `<div>
+                     Chongqing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96e295ebb83c35318c50a363d41d268f = L.marker(
+                [35.000074, 104.999927],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_57481d9fb4c569560bb047b8f714f8aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96e295ebb83c35318c50a363d41d268f.setIcon(icon_57481d9fb4c569560bb047b8f714f8aa);
+        
+    
+            marker_96e295ebb83c35318c50a363d41d268f.bindTooltip(
+                `<div>
+                     China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4c511cf32b8f7f3475f965add92e4e5 = L.marker(
+                [64.6863136, 97.7453061],
+                {}
+            ).addTo(map_7038fafb21594c9525aed444864919c8);
+        
+    
+            var icon_2b8c9edf00326155ea1eade7b927eda9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4c511cf32b8f7f3475f965add92e4e5.setIcon(icon_2b8c9edf00326155ea1eade7b927eda9);
+        
+    
+            marker_b4c511cf32b8f7f3475f965add92e4e5.bindTooltip(
+                `<div>
+                     Russia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
